@@ -1,0 +1,318 @@
+<style>
+
+  @keyframes rightbottom{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    40%{visibility: hidden;}
+    100%{visibility: visible;}
+  }
+  
+  @keyframes righttop{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    40%{visibility: hidden;}
+    100%{visibility: visible;}
+    }
+    @keyframes leftbottom{
+      0%{visibility: hidden;}
+      10%{visibility: hidden;}
+      20%{visibility: hidden;}
+      40%{visibility: hidden;}
+      100%{visibility: visible;}
+    }
+  @keyframes lefttop{
+    0%{visibility: hidden;}
+    10%{visibility: hidden;}
+    20%{visibility: hidden;}
+    40%{visibility: hidden;}
+    100%{visibility: visible;}
+  }
+    
+  body{
+    background-color: #FEF9E7;
+  }
+  
+  .robot{ background-color: #7D6608;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: calc(50vw - 250px);
+    top: calc(50vw - 150px);
+    }
+
+  .square1{ background-color: #9A7D0A;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    right: 6%;
+    bottom: 8%;
+    }
+  
+  .square2{ background-color: #B7950B;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    right: 11%;
+    bottom: 16%;
+    }
+  
+  .square3{ background-color: #D4AC0D;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    right: 16%;
+    bottom: 24%;
+    }
+  
+  .righteye{ background-color: #F1C40F;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 60%;
+    bottom: 40%;
+    border-radius: 60%;
+    }
+  
+  .rightblink{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 60%;
+    bottom: 33%;
+    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100%;
+    animation-name: rightbottom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; 
+    animation-delay: 5s;
+    }
+  
+  .rightblink1{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 60%;
+    bottom: 48%;
+    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0%;
+    animation-name: righttop; 
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    }
+  
+  .lefteye{ background-color: #F1C40F;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 60%;
+    bottom: 40%;
+    border-radius: 60%;
+    }
+  
+  .leftblink{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 60%;
+    bottom: 33%;
+    border-radius: 0% 100% 51% 49% / 0% 0% 100% 100%;
+    animation-name: leftbottom; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    }
+  
+  .leftblink1{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 60%;
+    bottom: 48%;
+    border-radius: 47% 53% 51% 49% / 100% 100% 0% 0%;
+    animation-name: lefttop;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    }
+  
+  .neck{ background-color: #9A7D0A;
+    width: 20px;
+    height: 90px;
+    position: absolute;
+    right: 50%;
+    bottom: -30%;
+    }
+  
+  .righthand{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 90%;
+    bottom: -30%;
+    border-radius: 40%
+    }
+  
+  .righthand1{ background-color: #B7950B;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 83%;
+    bottom: -30%;
+    border-radius: 40%;
+    }
+  
+  .righthand2{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 77%;
+    bottom: -30%;
+    border-radius: 40%;
+    }
+  
+  .lefthand{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 87%;
+    bottom: -30%;
+    border-radius: 40%;
+    }
+  
+  .lefthand1{ background-color: #B7950B;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 81%;
+    bottom: -30%;
+    border-radius: 40%;
+    }
+  
+  .lefthand2{ background-color: #D4AC0D;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 75%;
+    bottom: -30%;
+    border-radius: 40%;
+    }
+  
+  .fence{ background-color: #F5B041;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    right: -20%;
+    bottom: -190%;
+    }
+  .fence1{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 115%;
+    bottom: -190%;
+    }
+  
+  .fence2{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 100%;
+    bottom: -190%;
+    }
+  
+  .fence3{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 85%;
+    bottom: -190%;
+    }
+  
+  .fence4{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 70%;
+    bottom: -190%;
+    }
+  
+  .fence5{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 55%;
+    bottom: -190%;
+    }
+  
+  .fence6{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 40%;
+    bottom: -190%;
+    }
+  
+  .fence7{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 25%;
+    bottom: -190%;
+    }
+  
+  .fence8{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 10%;
+    bottom: -190%;
+    }
+  
+  .fence9{ background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: -5%;
+    bottom: -190%;
+    }
+  
+  .fence10{background-color: #D68910;
+    width: 3px;
+    height: 500px;
+    position: absolute;
+    right: 130%;
+    bottom: -190%;
+    
+  }
+</style>
+
+<div class="robot">
+  <div class="square1"></div>
+  <div class="square2"></div>
+  <div class="square3"></div>
+  <div class="righteye"></div>
+  <div class="rightblink"></div>
+  <div class="rightblink1"></div>
+  <div class="lefteye"></div>
+  <div class="leftblink"></div>
+  <div class="leftblink1"></div>
+  <div class="neck"></div>
+  <div class="righthand"></div>
+  <div class="righthand1"></div>
+  <div class="righthand2"></div>
+  <div class="lefthand"></div>
+  <div class="lefthand1"></div>
+  <div class="lefthand2"></div>
+  <div class="fence"></div>
+  <div class="fence1"></div>
+  <div class="fence2"></div>
+  <div class="fence3"></div>
+  <div class="fence4"></div>
+  <div class="fence5"></div>
+  <div class="fence6"></div>
+  <div class="fence7"></div>
+  <div class="fence8"></div>
+  <div class="fence9"></div>
+  <div class="fence10"></div>
+</div>
